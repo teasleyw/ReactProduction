@@ -44,57 +44,57 @@ useEffect(() => {
 }, []);
 
 // window.addEventListener('resize', showButton);
-$(document).ready(function() {
-    animateDiv();
+// $(document).ready(function() {
+//     animateDiv();
 
-});
+// });
 //
 // Random Movement
 // http://jsfiddle.net/ajgr6L2t/6/
 //
-function makeNewPosition($container) {
+// function makeNewPosition($container) {
 
-    // Get viewport dimensions (remove the dimension of the div)
-    $container = ($container || $(window))
-    var h = $container.height() - 50;
-    var w = $container.width() - 50;
+//     // Get viewport dimensions (remove the dimension of the div)
+//     $container = ($container || $(window))
+//     var h = $container.height() - 50;
+//     var w = $container.width() - 50;
 
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
+//     var nh = Math.floor(Math.random() * h);
+//     var nw = Math.floor(Math.random() * w);
 
-    return [nh, nw];
+//     return [nh, nw];
 
-}
+// }
 
-function animateDiv() {
-    var $target = $('.a');
-    var newq = makeNewPosition($target.parent());
-    var oldq = $target.offset();
-    var speed = calcSpeed([oldq.top, oldq.left], newq);
+// function animateDiv() {
+//     var $target = $('.a');
+//     var newq = makeNewPosition($target.parent());
+//     var oldq = $target.offset();
+//     var speed = calcSpeed([oldq.top, oldq.left], newq);
 
-    $('.a').animate({
-        top: newq[0],
-        left: newq[1]
-    }, speed, function() {
-        animateDiv();
-    });
+//     $('.a').animate({
+//         top: newq[0],
+//         left: newq[1]
+//     }, speed, function() {
+//         animateDiv();
+//     });
 
-};
+// };
 
-function calcSpeed(prev, next) {
+// function calcSpeed(prev, next) {
 
-    var x = Math.abs(prev[1] - next[1]);
-    var y = Math.abs(prev[0] - next[0]);
+//     var x = Math.abs(prev[1] - next[1]);
+//     var y = Math.abs(prev[0] - next[0]);
 
-    var greatest = x > y ? x : y;
+//     var greatest = x > y ? x : y;
 
-    var speedModifier = 0.1;
+//     var speedModifier = 0.1;
 
-    var speed = Math.ceil(greatest / speedModifier);
+//     var speed = Math.ceil(greatest / speedModifier);
 
-    return speed;
+//     return speed;
 
-}
+// }
 return (
     <>
     <HeaderButtons>
