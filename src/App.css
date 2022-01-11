@@ -1,0 +1,16 @@
+.pageContent{
+  display:flex;
+  flex: 10;
+  height: 100vh;
+  border-bottom: darkblue;
+  background-color: burlywood;
+}
+.sidebarContent{
+  display:flex;
+  width: auto;
+}
+.mainContent{
+  display:flex;
+  background-color: blue;
+  width:fit-content;
+}
