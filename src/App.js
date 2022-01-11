@@ -16,11 +16,11 @@ function App() {
             <GlobalStyle />
             <Navbar />
             <Routes>
-                <Route path="/Testing" exact component={<Testing/>} />
-                <Route path="/Main" component={<Main/>} />
-                <Route path="/Welcome" component={<Welcome/>} />
-                <Route path="/Timeline" component={<Timeline/>} />
-                <Route path="/Sandbox" component={<Sandbox/>} />
+                <Route path="/Testing" exact element={<Testing/>} />
+                <Route path="/Main" element={<Main/>} />
+                <Route path="/Welcome" element={<Welcome/>} />
+                <Route path="/Timeline" element={<Timeline/>} />
+                <Route path="/Sandbox" element={<Sandbox/>} />
             </Routes> 
         </Router>
     </div>
