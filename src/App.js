@@ -5,7 +5,7 @@ import GlobalStyle from './globalStyles';
 import Sidebar from "./Components/Sidebar/Sidebar"
 import Sandbox from "./Pages/Sandbox/Sandbox"
 import Testing from "./Pages/Testing/Testing"
-import { BrowserRouter as Router,Route,Switch, } from 'react-router-dom';
+import { BrowserRouter as Router,Route,Routes, } from 'react-router-dom';
 import Welcome from "./Pages/Welcome/Welcome"
 import Main from "./Components/Main/Main";
 import Timeline from "./Pages/Timeline/Timeline"
