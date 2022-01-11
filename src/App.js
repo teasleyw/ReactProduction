@@ -15,13 +15,13 @@ function App() {
         <Router>
             <GlobalStyle />
             <Navbar />
-            <Switch>
-                <Route path="/Testing" exact component={Testing} />
-                <Route path="/Main" component={Main} />
-                <Route path="/Welcome" component={Welcome} />
-                <Route path="/Timeline" component={Timeline} />
-                <Route path="/Sandbox" component={Sandbox} />
-            </Switch> 
+            <Routes>
+                <Route path="/Testing" exact component={<Testing/>} />
+                <Route path="/Main" component={<Main/>} />
+                <Route path="/Welcome" component={<Welcome/>} />
+                <Route path="/Timeline" component={<Timeline/>} />
+                <Route path="/Sandbox" component={<Sandbox/>} />
+            </Routes> 
         </Router>
     </div>
 
