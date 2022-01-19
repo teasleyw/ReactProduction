@@ -13,6 +13,7 @@ export const NormaGroup = {
     dark: true,
     primary: true,
     darkText: true,
+    link: "https://www.normagroup.com/corp/en/home/",
 }
 export const LockheedMartinSpace  = {
     id: 'Lockheed',
@@ -29,6 +30,7 @@ export const LockheedMartinSpace  = {
     dark: false,
     primary: false,
     darkText: true,
+    link: "https://www.lockheedmartin.com/en-us/capabilities/space.html",
 }
 
 export const Bowling = {
@@ -46,4 +48,5 @@ export const Bowling = {
     dark: false,
     primary: false,
     darkText: true,
+    link: "/Sandbox",
 }

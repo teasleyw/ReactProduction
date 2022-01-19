@@ -2,7 +2,7 @@ import React from 'react'
 import {Button} from '../ButtonElement'
 
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper,TopLine,Heading,Subtitle,BtnWrap,ImgWrap,Img} from './InfoElements'
-const index = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,description,buttonLabel,img,alt}) => {
+const index = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,description,buttonLabel,img,alt,link}) => {
     return (
         <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
@@ -13,7 +13,7 @@ const index = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,descript
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'>{buttonLabel}</Button>
+                                <Button href={link}>{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>
