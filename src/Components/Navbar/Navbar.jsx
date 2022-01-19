@@ -57,17 +57,12 @@ function Navbar() {
               </NavItem>
               <NavItem>
                 <NavLinks to='/Timeline' onClick={closeMobileMenu}>
-                  Timeline
+                  Blog
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='/Testing' onClick={closeMobileMenu}>
                   Testing
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to='/Welcome' onClick={closeMobileMenu}>
-                  Welcome
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -79,13 +74,13 @@ function Navbar() {
                 {button ? (
                   <NavItem>
                   <NavLinks to='/SignUp' onClick={closeMobileMenu}>
-                    SIGN UP
+                    Sign Up
                   </NavLinks>
                 </NavItem>
                 ) : (
                   <NavBtnLink to='/sign-up'>
                     <SignUpBtn onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
+                      Sign Up
                     </SignUpBtn>
                   </NavBtnLink>
                 )}

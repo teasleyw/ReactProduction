@@ -14,8 +14,7 @@ export default function Timeline() {
 
   return (
     <div>
-      <h1 className="title">Timeline</h1>
-      <h6 className="sub-title">(Also an emotional journal of sorts)</h6>
+      <h1 className="title">Blog</h1>
       <VerticalTimeline lineColor="black">
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
