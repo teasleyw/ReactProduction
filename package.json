@@ -21,6 +21,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.0-beta.8",
     "react-scripts": "5.0.0",
+    "react-scroll": "1.8.4",
     "react-vertical-timeline-component": "^3.5.2",
     "sass": "^1.47.0",
     "styled-components": "^5.3.3",
