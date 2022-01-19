@@ -14,7 +14,7 @@ export const timelineElements = [
       title: "Capstone Project-(Lockheed Martin Space)",
       location: "East Lansing, Michigan",
       description:
-        "During what was ultimately the most difficult semester of my life Emotionally, Physically, and therefore Mentally, I Turned to spending most of hours in the Capstone Lab working on the project. Which was another Web application that used Flask,React as well as a few new components such as Nexus Repository manager, Jenkins, PostgresSQL, and Docker. I learned about user Authentication, I learned alot about communicating between Operating systems and SDK’s using Bash. I learned a lot as well from my partners in the project. All were very unique and gifted people in one way or another and taught me alot about Software Development as well as Life.",
+        "The Most Interesting Class I had at Michigan State was my Capstone. My Capstone had me working directly with members of Lockheed Martin Space out of Colorado. The project my team and I were assigned was working on an web application Appstore for their satellites. The tech stack for the application was Flask, React, Docker, Jenkins, PostgreSQL, Nexus Repository Manager, Conan C++ Package Manager. I had alot of fun working on this project with my team often spending 40+ hours in the lab, It felt like a real job which I liked alot. I learned alot from my peers on this project that made me excited to begin my career as well as work on my won personal projects, thus this website came into existence.",
       date: "September 2021 - December 2021",
       icon: <Heart/>,
     },
@@ -23,17 +23,8 @@ export const timelineElements = [
       title: "Creation of this Website",
       location: "East Lansing, Michigan",
       description:
-        "In November of 2021, Desperate to find a distraction from my life's troubles, and with a recent boost in confidence for my Programming abilities I decieded I needed to start working on a project of my own. I Opened up a new project in Visual Studio Code, setup a Flask Backend and React Frontend, and a Free Azure Web Server.",
+        "In November of 2021, with a recent boost in confidence for my Programming abilities I decieded I needed to start working on a project of my own. I Opened up a new project in Visual Studio Code, setup a Flask Backend and React Frontend, and a Free Azure Web Server.",
       date: "November 2021",
-      icon: <Heart/>,
-    },
-    {
-      id: 4,
-      title: "Struggling for Inspiration",
-      location: "East Lansing, Michigan",
-      description:
-        "Struggling to figure out what I wanted to make a website about, and a portfolio website was not clicking with my creative desires, I spent alot of time playing guitar and piano with my roomate, having confidence issues again with my coding abilites and creativity, which seemed that I could apply better to music than I could to programming. until one day I realized that I was just under the shroud of stress and Imposter Syndrome that came with the conclusion of my college career. I began to realize that there are almost unlimited opportunities to connect with people, Create new things, and Grow as a human being lying ahead of me.   ",
-      date: "Late November 2021",
       icon: <Heart/>,
     },
     {
@@ -64,13 +55,14 @@ export const timelineElements = [
         icon: <Heart/>,
     },
     {
-        id: 8,
-        title: "MERRY CHISTMAS",
-        location: "Ohio (ohio gets a bad rap and I will have none of that.)",
-        description:
-          "Today, I will do either a Christmas tree a day late and then try and turn what I learn from that tutorial into a bowling pin, Or I will follow a tutorial for making random lights in the back move. then turn that into a ",
-        date: "December 26th",
-        icon: <Heart/>,
-    },
+      id: 8,
+      title: "Heroku Deployment",
+      location: "Rochester Hills, Michigan (My house)",
+      description:
+      "I decided that I needed to prove to the world beyond my resume that I have abilities to do things, so even with a non-complete website I thought being able to deploy and show what I had worked atleast would show I have some skills and am devoted to improving them. Deploying on Heroku was a little tough the main roadblock I eventually found out was that I was running out of memory. I realized a few things, there is a way to create larger space on the heroku app by using the command 'heroku config:set NODE_OPTIONS='--max_old_space_size=2560' -a [app_name]' That changed my error to a timeout error and at this point I realized I was deploying in a development environment which I fixed by changing my start script in package.json from react-scripts start to serve -s build"
+      ,
+      date: "January 9th",
+      icon:<Heart/>,
+    }
   ];
   

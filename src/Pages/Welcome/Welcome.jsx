@@ -9,14 +9,6 @@ const initialValues = {
 }
 const SoftwareSDK = [
     {
-        name: 'FUCK',
-        TestStatus: 1 ,
-    },
-    {
-        name: 'FICKKdK',
-        TestStatus: 0,
-    },
-    {
         name: 'ZCU102 VXWorks',
         TestStatus: 0,
     },
