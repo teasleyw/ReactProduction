@@ -32,7 +32,7 @@ export const timelineElements = [
       title: "A new beginning",
       location: "East Lansing, Michigan",
       description:
-        "With my college career being over, and limitless opportunities ahead of me I decieded to get back to working on my Website I Rearranged the format of everything added a new Sidebar and Color Scheme and made some whiteboard drawings of some ideas that I had",
+        "With my college career being over, and limitless opportunities ahead of me I decided to get back to working on my website. I rearranged the format of everything and added a new sidebar and color scheme. I also made some whiteboard drawings of some ideas that I had.",
       date: "December 18th",
       icon: <Heart/>,
     },
@@ -41,7 +41,7 @@ export const timelineElements = [
       title: "Timeline",
       location: "Rochester Hills, Michigan (My house)",
       description:
-        "Today I worked on the timeline feature. Spent way too much time figuring out what a svg is and how to move it, until realizing I just had to add css to the div sorrounding the svg instead of the svg itself. Tommorow I am going to spend the day refactoring my CSS to syled components I came to this conclusion while looking up how to keep style between web and mobile.",
+        "Today I worked on the timeline feature. I Spent way too much time figuring out what a svg is and how to move it, until realizing I just had to add CSS to the div surrounding the svg instead of the svg itself. Tomorrow I am going to spend the day refactoring my CSS to styled components. I came to this conclusion while looking up how to keep style between web and mobile.",
       date: "December 21st",
       icon: <Heart/>,
     },
@@ -50,7 +50,7 @@ export const timelineElements = [
         title: "Styled Components",
         location: "Rochester Hills, Michigan (My house)",
         description:
-          "Got Started a little late today. Watched too many tik toks and was not feeling very powered. Did not have breakfast and ate pretty bad early in the day. I used /etc/hosts to block instagram and facebook on my laptop. '127.0.0.1  www.instagram.com' is how i did it. After I got started I created a sandbox tab. In the sandbox tab I followed along a youtube video about making a neon button in which I learned some very interesting things about 3d designing with CSS that i did not even know was possible. I also Redid the Topbar which is now named Navbar and the application today is much more friendly to different Sized Browsers, I also followed along a youtube tutorial to make a neon button and learned some of the 3d capabilities of CSS, I am excited to explore some more.",
+          "Got Started a little late today. Watched too many tik toks and was not feeling very powered, did not have breakfast and ate pretty bad early in the day. I used /etc/hosts to block instagram and facebook on my laptop. The command '127.0.0.1  www.instagram.com' transfers any attempt to reach instagram with localhost. Afterwards, I created a sandbox tab. In the sandbox tab, I followed along a youtube video about making a neon button in which I learned some very interesting things about 3D designing with CSS that I didn't even know were possible. I also redid the Top Bar which is now named Navbar and the application today is much more friendly to different sized browsers.",
         date: "December 22nd",
         icon: <Heart/>,
     },
@@ -59,7 +59,7 @@ export const timelineElements = [
       title: "Heroku Deployment",
       location: "Rochester Hills, Michigan (My house)",
       description:
-      "I decided that I needed to prove to the world beyond my resume that I have abilities to do things, so even with a non-complete website I thought being able to deploy and show what I had worked atleast would show I have some skills and am devoted to improving them. Deploying on Heroku was a little tough the main roadblock I eventually found out was that I was running out of memory. I realized a few things, there is a way to create larger space on the heroku app by using the command 'heroku config:set NODE_OPTIONS='--max_old_space_size=2560' -a [app_name]' That changed my error to a timeout error and at this point I realized I was deploying in a development environment which I fixed by changing my start script in package.json from react-scripts start to serve -s build"
+      "Today, I decided to deploy my website. I do not have money to spend, and the website right now is not too heavy, so I decided to go with a free hosting service. I landed on Heroku. Deploying on Heroku was a little tough, the main roadblock I eventually discovered, I was running out of memory. I realized a few things, there is a way to create larger space on the Heroku app by using the command 'heroku config:set NODE_OPTIONS='--max_old_space_size=2560' -a [app_name]' This changed my error to a timeout error and at this point I realized I was deploying in a development environment. I fixed this by changing my start script in package.json from react-scripts start to serve -s build"
       ,
       date: "January 9th",
       icon:<Heart/>,

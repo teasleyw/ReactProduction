@@ -18,8 +18,9 @@ const HeroSection = () => {
                 <HeroP>
                 I am a graduate of Michigan State University.<br></br><br></br>
                 I obtained a bachelor's degree in Computer Science.<br></br><br></br>
-                and I am Looking forward to starting my career as a software developer.<br></br><br></br>
-                While I search I am working on this personal project of mine Scroll Down to find out more about me and this project.
+                and I am looking forward to starting my career as a software developer.<br></br><br></br>
+                While I search, for a full time opportunity I am working on this personal project.<br></br><br></br>
+                scroll down to find out more about me and this project.
 
                 </HeroP>
                 <HeroBtnWrapper>
