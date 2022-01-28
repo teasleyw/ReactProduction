@@ -1,0 +1,242 @@
+$pc: #22212c;
+$sc: #2a2c37;
+$tc: #9580ff;
+$qc: #8aff80;
+$r: #ff5555;
+$w: #f8f8f2;
+
+input, select, textarea {
+    font    : sans-serif;
+    font-size : 24px;
+    border  : none;
+    background: none;
+    outline: none;
+    color: rgb(0,206,209);
+    caret-color: transparent;
+
+    
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: $w;
+  background-color: $pc;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 0;
+
+  section {
+    width: 100%;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: $tc;
+    }
+
+    .lx-card {
+      width: 80%;
+      background-color: $sc;
+
+      .lx-btn {
+        user-select: none;
+      }
+
+      .lx-row {
+        flex-flow: wrap column;
+        gap: 2rem;
+      }
+
+      .beats-indicator,
+      .bpms {
+        width: 100%;
+        user-select: none;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      .beats-indicator {
+        &.is-first-beat {
+          color: $qc;
+        }
+      }
+
+      .beats {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .beat {
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          background-color: $pc;
+
+          &.is-active {
+            background-color: $qc;
+          }
+
+          &.is-muted {
+            display: none;
+            visibility: hidden;
+          }
+        }
+      }
+
+      .range-slider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .lx-btn {
+          width: 3rem;
+          height: 3rem;
+          padding: 0.75rem;
+          border-radius: 50%;
+          font-size: 1.5rem;
+          background-color: $pc;
+
+          &:first-child {
+            color: $tc;
+          }
+
+          &:last-child {
+            color: $qc;
+          }
+        }
+
+        input[type="range"].range {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: 80%;
+          background-color: transparent;
+
+          &::-webkit-slider-runnable-track {
+            -webkit-appearance: none;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            border-radius: 2.5rem;
+            background: rgb(149, 128, 255);
+            background: linear-gradient(
+              45deg,
+              $tc 0%,
+              rgba(138, 255, 128, 1) 100%
+            );
+          }
+
+          &::-moz-range-track {
+            -moz-appearance: none;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            border-radius: 2.5rem;
+            background: rgb(149, 128, 255);
+            background: linear-gradient(
+              45deg,
+              rgba(149, 128, 255, 1) 0%,
+              rgba(138, 255, 128, 1) 100%
+            );
+          }
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 2.5rem;
+            height: 2.5rem;
+            // Before I didn't need this property, but to keep it working as it should I put it here:
+            transform: translateY(-0.85rem);
+            border-radius: 50%;
+            border: 0.125rem solid $tc;
+            position: relative;
+            cursor: grab;
+            background-color: $sc;
+            transition: border 1000ms ease;
+          }
+
+          &::-moz-range-thumb {
+            -moz-appearance: none;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: 0.125rem solid $tc;
+            position: relative;
+            cursor: grab;
+            background-color: $sc;
+            transition: border 1000ms ease;
+          }
+
+          &::-webkit-slider-thumb:active {
+            cursor: grabbing;
+          }
+
+          &::-moz-range-thumb:active {
+            cursor: grabbing;
+          }
+
+          &.green-thumb {
+            &::-webkit-slider-thumb {
+              border-color: $qc;
+            }
+
+            &::-moz-range-thumb {
+              border-color: $qc;
+            }
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .btoogle-metronome {
+        text-transform: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $pc;
+        background-color: $qc;
+      }
+
+      .time-presets {
+        .preset {
+          font-size: 1.15rem;
+          font-weight: 600;
+          color: $pc;
+          background-color: $r;
+
+          &.is-active {
+            background-color: $tc;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 56.25rem) {
+  main {
+    section {
+      .lx-card {
+        width: 100%;
+      }
+    }
+  }
+}
