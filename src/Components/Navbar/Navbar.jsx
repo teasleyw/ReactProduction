@@ -61,6 +61,11 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
+                <NavLinks to='/Metronome' onClick={closeMobileMenu}>
+                  Metronome
+                </NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLinks to='/Testing' onClick={closeMobileMenu}>
                   Testing
                 </NavLinks>
