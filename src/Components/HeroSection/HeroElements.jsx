@@ -64,6 +64,7 @@ export const Hero1 = styled.h1`
     }
 `   
 export const HeroP = styled.p`
+    font-family: 'San Francisco'
     margin-top: 24px;
     color: #fff;
     font-size: 24px;

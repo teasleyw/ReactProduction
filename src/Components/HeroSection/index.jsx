@@ -14,12 +14,12 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HeroBg>
             <HeroContent>
-                <Hero1>Hi my name is William Teasley</Hero1>
+                <Hero1>Full-stack Developer</Hero1>
                 <HeroP>
                 I am a graduate of Michigan State University.<br></br><br></br>
                 I obtained a bachelor's degree in Computer Science.<br></br><br></br>
-                and I am looking forward to starting my career as a software developer.<br></br><br></br>
-                While I search, for a full time opportunity I am working on this personal project.<br></br><br></br>
+                Searching for Full Time Opportunity<br></br><br></br>
+                This is my portfolio website as well as a way to put my skills to practice<br></br><br></br>
                 scroll down to find out more about me and this project.
 
                 </HeroP>

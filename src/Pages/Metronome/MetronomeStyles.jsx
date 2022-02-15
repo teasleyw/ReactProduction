@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { FaHeartBroken } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
@@ -74,6 +74,11 @@ export const Beat = styled.span`
     height: 1.5rem;
     border-radius: 50%;
     background-color: ${pc};
+    ${props =>
+    props.selected &&
+    css`
+     background-color: ${'green'};
+    `}
 
 }
 &.is-active{
@@ -107,7 +112,7 @@ export const NeonBtn = styled.a`
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.25em ${props => props.NeonColor};
   position: relative;
   box-shadow: inset 0 0 0.5em ${props => props.NeonColor}, 0 0 0.5em ${props => props.NeonColor};
-  transition: background-color 100ms linear;
+  transition: background-color 1ms linear;
 
    }
   &:before {
@@ -133,8 +138,8 @@ export const NeonBtn = styled.a`
     width: 100%;
     height: 100%;
     box-shadow: 0 0 1em 0.5em ${props => props.NeonColor};
-    transition: opacity 100ms linear;
-    transition: box-shadow 1000ms linear;
+    transition: opacity 1ms linear;
+    transition: box-shadow 1ms linear;
     opacity: 0;
   }
   &:hover {
@@ -171,7 +176,14 @@ export const DiscoBtn = styled.a`
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.25em ${props => props.NeonColor};
   position: relative;
   box-shadow: inset 0 0 0.5em ${props => props.NeonColor}, 0 0 0.5em ${props => props.NeonColor};
-  transition: 1000ms linear;
+  transition: 10ms linear;
+  ${props =>
+    props.selected &&
+    css`
+      background-color: ${props => props.NeonColor};
+      color: ${bkgClr};
+      text-shadow: 0 0 0.05em hsl(0 0% 100% / 0.5), 0 0 0.25em ${bkgClr};
+    `}
 
    }
   &:before {
@@ -187,7 +199,8 @@ export const DiscoBtn = styled.a`
     transform: perspective(1em) rotateX(40deg) translateZ(0em) scale(1,0.35);
     filter: blur(1em);
     opacity: 0.7;
-    transition: background 1000ms linear;
+    transition: background 10ms linear;
+    
   }
   &:after {
     content: "";
@@ -209,6 +222,11 @@ export const DiscoBtn = styled.a`
       text-shadow: 0 0 0.05em hsl(0 0% 100% / 0.5), 0 0 0.25em ${bkgClr};
   }
   &:focus {
+      background-color: ${props => props.NeonColor};
+      color: ${bkgClr};
+      text-shadow: none;
+  }
+  &:active {
       background-color: ${props => props.NeonColor};
       color: ${bkgClr};
       text-shadow: none;
