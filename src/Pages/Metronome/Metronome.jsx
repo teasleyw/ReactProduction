@@ -13,9 +13,11 @@ import {
     DiscoBtn,
   } from './MetronomeStyles.jsx';
 import "./Metronome.scss"
+
 export default function Metronome() {
     const [BPMn,setBPM] = useState(160);
     const [currBeat,setCurrBeat] = useState(0);
+    
     function handleChange(event) {
         setBPM(event.target.value)
         console.log({BPMn})
@@ -26,6 +28,7 @@ export default function Metronome() {
             setBPM(0)
         }
     }
+    
     return (
         <>
         <SandboxPage>
